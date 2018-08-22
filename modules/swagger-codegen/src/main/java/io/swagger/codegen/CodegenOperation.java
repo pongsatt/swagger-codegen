@@ -158,6 +158,69 @@ public class CodegenOperation {
     }
 
     /**
+     * Check if http method is GET
+     *
+     * @return true if GET, false otherwise
+     */
+    public boolean isGet() {
+        return "GET".equalsIgnoreCase(httpMethod);
+    }
+
+    /**
+     * Check if http method is POST
+     *
+     * @return true if POST, false otherwise
+     */
+    public boolean isPost() {
+        return "POST".equalsIgnoreCase(httpMethod);
+    }
+
+    /**
+     * Check if http method is PUT
+     *
+     * @return true if PUT, false otherwise
+     */
+    public boolean isPut() {
+        return "PUT".equalsIgnoreCase(httpMethod);
+    }
+
+    /**
+     * Check if http method is PATCH
+     *
+     * @return true if PATCH, false otherwise
+     */
+    public boolean isPatch() {
+        return "PATCH".equalsIgnoreCase(httpMethod);
+    }
+
+    /**
+     * Check if http method is DELETE
+     *
+     * @return true if DELETE, false otherwise
+     */
+    public boolean isDelete() {
+        return "DELETE".equalsIgnoreCase(httpMethod);
+    }
+
+    /**
+     * Check if http method is HEAD
+     *
+     * @return true if HEAD, false otherwise
+     */
+    public boolean isHead() {
+        return "HEAD".equalsIgnoreCase(httpMethod);
+    }
+
+    /**
+     * Check if http method is OPTIONS
+     *
+     * @return true if OPTIONS, false otherwise
+     */
+    public boolean isOptions() {
+        return "OPTIONS".equalsIgnoreCase(httpMethod);
+    }
+
+    /**
      * Check if body param is allowed for the request method
      *
      * @return true request method is PUT, PATCH or POST; false otherwise
